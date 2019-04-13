@@ -1,0 +1,15 @@
+ 
+<h1>Student Sign-up this is new</h1>
+<%= form_with scope: :student, url: students_path, local: true do |form| %> 
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+  <p>
+    <%= form.label :email %><br>
+    <%= form.text_area :email %>
+  </p>
+  <p>
+    <%= form.submit %>   
+  </p>
+<% end %>
